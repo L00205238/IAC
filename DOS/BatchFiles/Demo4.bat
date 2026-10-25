@@ -13,6 +13,7 @@ echo *******************************************
 
 echo *** About to do something critical ***
 echo *** press [ctrl][c] to exit or any key to continue ***
+echo  *** Path to clone is V:\clone of UB1604-Server\UB1604-04JAN18,vmx ***
 pause 
 
 SETLOCAL
