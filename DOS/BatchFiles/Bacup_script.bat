@@ -1,6 +1,6 @@
 @echo off
 :: ========================================================
-:: Script Name: Bacup.bat
+:: Script Name: Bacup_Script.bat
 :: Description: Backs up files from the local IAC repository 
 ::              Data folder to a dated backup folder, then 
 ::              sets the read-only flag on the copied files.
@@ -23,6 +23,8 @@ if not exist "%SRC%" (
 :: Create dated folder (Format: DDMMMYY, e.g., 30OCT26)
 set TARGET=%DEST_BASE%\%DATE:~0,2%%DATE:~3,3%%DATE:~8,2%
 
+:: Display path used for source an bakcup
+
 echo [INFO] Source Folder:  %SRC%
 echo [INFO] Backup Folder:  %TARGET%
 
@@ -32,7 +34,7 @@ if not exist "%TARGET%" mkdir "%TARGET%"
 :: Copy all files from Data folder to the new dated folder
 copy "%SRC%\*.*" "%TARGET%\"
 
-:: Set the read-only attribute on all files in the backup destination
+:: Set the read-only attribute on back up folder 
 attrib +r "%TARGET%\*.*"
 
 echo [SUCCESS] Backup completed successfully!
