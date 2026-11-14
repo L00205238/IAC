@@ -17,7 +17,7 @@ set -e
 
 #define paths
 
-LOG_DIR="/Linux/UserLogs"
+LOG_DIR="/UserLogs"
 
 # requirement 5 on the assgment 
 #creeates a variable to store the current month and year in the format "MonthYear" (e.g., "January2026"). This variable will be used to generate the log file name for the current month and year.
