@@ -17,7 +17,7 @@ set -e
 
 #define paths
 
-LOG_DIR="/UserLogs"
+LOG_DIR="$(dirname "$0")/../UserLogs"
 
 # requirement 5 on the assgment 
 #creeates a variable to store the current month and year in the format "MonthYear" (e.g., "January2026"). This variable will be used to generate the log file name for the current month and year.
@@ -43,7 +43,7 @@ last > "$LOG_FILE"
 chmod 755 "$LOG_DIR"
 chmod 644 "$LOG_FILE"
 
-echo " Success! Report generated and saved to $LOG_FILE"
+echo "Success! Report generated and saved to $LOG_FILE"
 
 
 
