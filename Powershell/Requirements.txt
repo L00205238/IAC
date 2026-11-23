@@ -17,4 +17,4 @@ ads.DonegalDoughnut.ie
 8. Backup the VMs
 9. Document 
 
-Go live 
+any client joining the domain ..ver
